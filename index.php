@@ -113,7 +113,19 @@
                 <?php } ?>
             </ul>
         <?php } ?>
+        <?php
+            require 'functions.php';
 
+            $category = 'electrique';
+            $name = 'pika';
+
+            $sayHello = sayHello($category, $name);
+            echo $sayHello;
+
+            echo fight('Carapuce', 'Salamèche', $categories);
+            echo fight('Salamèche', 'Carapuce', $categories);
+            echo fight('Bulbizarre', 'Magicarpe', $categories);
+         ?>
     </section>
 </body>
 
